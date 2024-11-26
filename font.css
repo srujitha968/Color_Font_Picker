@@ -313,3 +313,43 @@ h2 {
     border-radius: 15px;
     font-size: large;
 }
+@media (max-width: 768px) {
+    #main {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0; 
+    }
+    #con{
+        display:flex;
+        flex-direction: column;
+    }
+    #col, #bg{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+    }
+     .ft{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto ;
+    }
+    #text {
+        width: 80%;
+        max-width: 500px;
+        height:300px;
+    }
+    #col, #bg button{
+        width:30px;
+        height:30px;
+    }
+    .ft button {
+        width: 50px;
+        height: 35px;
+        font-size: medium;
+    }
+    .ft button:hover{
+        width:60px;
+        height:40px;
+    }
+    h1, h2 {
+        font-size: 20px;
+    }
+}
