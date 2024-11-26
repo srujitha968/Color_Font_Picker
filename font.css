@@ -1,39 +1,36 @@
- @media (max-width: 768px) {
-    #main {
-       display:flex;
-       flex-direction: column;
-          }
-    #text {
-        width:500px;
-    }
- }
-body{
+body {
     background-color: rgb(173, 217, 238);
 }
-#bgcol button:hover{
+
+#bgcol button:hover {
     width: 40px;
     height: 40px;
 }
-#col button:hover{
+
+#col button:hover {
     width: 40px;
     height: 40px;
 }
-.ft button:hover{
+
+.ft button:hover {
     width: 120px;
     height: 60px;
     background-color: black;
     color: white;
     box-shadow: 1px 1px 1px 1px red;
 }
-#con{
+
+#con {
     display: flex;
     margin-left: 40px;
 }
-#he{
+
+#he {
     font-style: italic;
     color: red;
 }
-h2{
+
+h2 {
     text-align: center;
     background-color: yellow;
     height: 35px;
@@ -42,21 +39,24 @@ h2{
     margin-bottom: 15px;
     font-style: italic;
 }
-#main{
+
+#main {
     display: flex;
     flex-direction: row;
     margin-left: 17px;
 }
-#sub1{
+
+#sub1 {
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin-right: 40px;
 }
-.ft{
+
+.ft {
     display: grid;
-    grid-template-columns: auto auto auto ;
-    grid-template-rows: 20px, 20px, 20px, 20px,;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 20px, 20px, 20px, 20px, ;
     column-gap: 20px;
     row-gap: 10px;
     height: fit-content;
@@ -64,21 +64,22 @@ h2{
     border-radius: 15px;
     padding: 5px;
 }
-#text{
+
+#text {
     height: 550px;
     width: 490px;
     margin-left: 30px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 1px 1px 2px 2px black;
-    border: 1px solid black;
-    outline:none;
-    padding:5px;
+    padding: 5px;
+    outline: none;
 }
-#col{
+
+#col {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: 20px, 20px, 20px, 20px,;
+    grid-template-rows: 20px, 20px, 20px, 20px, ;
     column-gap: 20px;
     row-gap: 10px;
     height: fit-content;
@@ -86,10 +87,11 @@ h2{
     border-radius: 15px;
     padding: 5px;
 }
-#bg{
+
+#bg {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: 20px, 20px, 20px, 20px,;
+    grid-template-rows: 20px, 20px, 20px, 20px, ;
     column-gap: 20px;
     row-gap: 10px;
     height: fit-content;
@@ -97,7 +99,8 @@ h2{
     border-radius: 15px;
     padding: 5px;
 }
-#col button{
+
+#col button {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -105,76 +108,100 @@ h2{
     cursor: pointer;
     box-shadow: 1px 1px 1px 1px;
 }
-#redtext{
+
+#redtext {
     background-color: red;
-} 
-#greentext{
+}
+
+#greentext {
     background-color: green;
 }
-#pinktext{
+
+#pinktext {
     background-color: pink;
 }
-#yellowtext{
+
+#yellowtext {
     background-color: yellow;
 }
-#bluetext{
+
+#bluetext {
     background-color: blue;
 }
-#violettext{
+
+#violettext {
     background-color: violet;
 }
-#orangetext{
+
+#orangetext {
     background-color: orange;
 }
-#hotpinktext{
+
+#hotpinktext {
     background-color: hotpink;
 }
-#lightbluetext{
+
+#lightbluetext {
     background-color: lightblue;
 }
-#greytext{
+
+#greytext {
     background-color: grey;
 }
-#lightgreentext{
+
+#lightgreentext {
     background-color: lightgreen;
 }
-#purpletext{
+
+#purpletext {
     background-color: purple;
 }
-#browntext{
+
+#browntext {
     background-color: brown;
 }
-#whitetext{
+
+#whitetext {
     background-color: white;
 }
-#tealtext{
+
+#tealtext {
     background-color: teal;
 }
-#maroontext{
+
+#maroontext {
     background-color: maroon;
 }
-#auqatext{
+
+#auqatext {
     background-color: aqua;
 }
-#minttext{
+
+#minttext {
     background-color: rgb(103, 245, 174);
 }
-#peachtext{
+
+#peachtext {
     background-color: peachpuff;
 }
-#olivetext{
+
+#olivetext {
     background-color: olive;
 }
-#lightredtext{
+
+#lightredtext {
     background-color: orangered;
 }
-#darkredtext{
+
+#darkredtext {
     background-color: darkred;
 }
-#perutext{
+
+#perutext {
     background-color: peru;
 }
-#bg button{
+
+#bg button {
     width: 30px;
     height: 30px;
     border: none;
@@ -182,79 +209,104 @@ h2{
     box-shadow: 1px 1px 1px 1px;
     border-radius: 50%;
 }
-#greenbg{
+
+#greenbg {
     background-color: green;
 }
-#redbg{
+
+#redbg {
     background-color: red;
 }
-#pinkbg{
+
+#pinkbg {
     background-color: pink;
 }
-#yellowbg{
+
+#yellowbg {
     background-color: yellow;
 }
-#bluebg{
+
+#bluebg {
     background-color: blue;
 }
-#violetbg{
+
+#violetbg {
     background-color: violet;
 }
-#orangebg{
+
+#orangebg {
     background-color: orange;
 }
-#hotpinkbg{
+
+#hotpinkbg {
     background-color: hotpink;
 }
-#lightbluebg{
+
+#lightbluebg {
     background-color: lightblue;
 }
-#greybg{
+
+#greybg {
     background-color: grey;
 }
-#lightgreenbg{
+
+#lightgreenbg {
     background-color: lightgreen;
 }
-#greenbg{
+
+#greenbg {
     background-color: green;
 }
-#purplebg{
+
+#purplebg {
     background-color: purple;
 }
-#brownbg{
+
+#brownbg {
     background-color: brown;
 }
-#tealbg{
+
+#tealbg {
     background-color: teal;
 }
-#maroonbg{
+
+#maroonbg {
     background-color: maroon;
 }
-#auqabg{
+
+#auqabg {
     background-color: aqua;
 }
-#mintbg{
+
+#mintbg {
     background-color: rgb(103, 245, 174);
 }
-#peachbg{
+
+#peachbg {
     background-color: peachpuff;
 }
-#olivebg{
+
+#olivebg {
     background-color: olive;
 }
-#orangeredbg{
+
+#orangeredbg {
     background-color: orangered;
 }
-#darkredbg{
+
+#darkredbg {
     background-color: darkred;
 }
-#perubg{
+
+#perubg {
     background-color: peru;
 }
-#whitebg{
+
+#whitebg {
     background-color: white;
 }
-.ft button{
+
+.ft button {
     width: 100px;
     height: 40px;
     border: none;
