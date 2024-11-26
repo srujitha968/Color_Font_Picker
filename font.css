@@ -321,12 +321,12 @@ h2 {
     }
     #col, #bg{
         display: grid;
-        grid-template-columns: auto auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto;
         background-color: white;
     }
      .ft{
         display: grid;
-        grid-template-columns: auto auto auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto ;
         background: white;
     }
     #text {
@@ -349,6 +349,5 @@ h2 {
     }
     h1, h2 {
         font-size: 20px;
-        height:28px;
     }
 }
