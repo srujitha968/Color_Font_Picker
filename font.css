@@ -320,14 +320,22 @@ h2 {
         flex-direction: column;
         margin-left: 0; 
     }
+    #con{
+        display:flex;
+        flex-direction: column;
+    }
+    #col, #bg, .ft{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto;
+    }
     #text {
-        width: 100%;
+        width: 80%;
         max-width: 500px;
     }
-    #col, #bg, .ft {
-        grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+    #text:hover {
+        width:80%;
+        height:300px;
     }
-
     .ft button {
         width: 80px;
         height: 35px;
