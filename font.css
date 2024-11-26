@@ -1,3 +1,33 @@
+@media (max-width: 768px) {
+    #main {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0; /* Optional: Reset margin for smaller screens */
+    }
+
+    #text {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    #col, #bg, .ft {
+        grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+    }
+
+    .ft button {
+        width: 80px;
+        height: 35px;
+        font-size: medium;
+    }
+
+    /* Optional: Adjust other elements for smaller screens */
+    h2 {
+        font-size: 20px; /* Reduce font size */
+    }
+
+    /* Additional adjustments can go here */
+}
+
 body {
     background-color: rgb(173, 217, 238);
 }
