@@ -324,21 +324,28 @@ h2 {
         display:flex;
         flex-direction: column;
     }
-    #col, #bg, .ft{
+    #col, #bg,{
         display: grid;
         grid-template-columns: auto auto auto auto auto auto auto auto;
+        backgroung-color:white;
+    }
+     .ft{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        backgroung-color:white;
     }
     #text {
         width: 80%;
         max-width: 500px;
-    }
-    #text:hover {
-        width:80%;
         height:300px;
     }
     .ft button {
-        width: 80px;
+        width: 60px;
         height: 35px;
         font-size: medium;
+    }
+    h1, h2 {
+        font-size: 20px;
+        margin-bottom:10px;
     }
 }
