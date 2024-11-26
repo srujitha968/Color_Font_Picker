@@ -320,9 +320,17 @@ h2 {
         flex-direction: column;
         margin-left: 0; 
     }
-
     #text {
         width: 100%;
         max-width: 500px;
+    }
+    #col, #bg, .ft {
+        grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+    }
+
+    .ft button {
+        width: 80px;
+        height: 35px;
+        font-size: medium;
     }
 }
