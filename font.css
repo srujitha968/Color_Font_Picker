@@ -2,11 +2,14 @@ body {
     background-color: rgb(173, 217, 238);
 }
 
-#bgcol, #col button:hover {
+#bgcol button:hover {
     width: 40px;
     height: 40px;
 }
-
+#col button:hover {
+    width: 40px;
+    height: 40px;
+}
 .ft button:hover {
     width: 120px;
     height: 60px;
@@ -322,12 +325,10 @@ h2 {
     #col, #bg{
         display: grid;
         grid-template-columns: auto auto auto auto auto auto auto;
-        background-color: white;
     }
      .ft{
         display: grid;
         grid-template-columns: auto auto auto auto auto auto ;
-        background: white;
     }
     #text {
         width: 80%;
