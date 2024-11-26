@@ -322,6 +322,7 @@ h2 {
     #con{
         display:flex;
         flex-direction: column;
+        gap:20px;
     }
     #text {
         width: 80%;
