@@ -64,6 +64,7 @@ h2{
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0 2px 2px black;
+    border: 1px solid black;
 }
 #col{
     display: grid;
