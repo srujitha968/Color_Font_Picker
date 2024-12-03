@@ -262,3 +262,13 @@ function t() {
     let t=document.getElementById("text")
     t.style.fontFamily="Century Gothic"
 }
+const de=document.getElementById("pic")
+de.addEventListener('click',download_image);
+function download_image() {
+    html2canvas(document.getElementById("text")).then(canvas => {
+        const link = document.createElement('a');
+        link.href = canvas.toDataURL('image/png');  
+        link.download = 'thought.png';
+        link.click();
+    });
+}

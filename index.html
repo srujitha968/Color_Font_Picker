@@ -1,102 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color & Font Picker</title>
     <link rel="stylesheet" href="font.css">
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+        integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body>
-    <center><h1 id="he">Color & Font Picker</h1></center>
-    <div id="main">
-    <h1 id="text" contenteditable="true"></h1>
-    <div id="con">
-    <div id="sub1"> 
-        <div>
-        <h2>Text Color</h2>
-        <div id="col">
-        <button id="redtext" onclick="redtextcol()"></button>
-        <button id="greentext" onclick="greentextcol()"></button>
-        <button id="pinktext" onclick="pinktextcol()"></button>
-        <button id="yellowtext" onclick="yellowtextcol()"></button>
-        <button id="bluetext" onclick="bluetextcol()"></button>
-        <button id="violettext" onclick="violettextcol()"></button>
-        <button id="orangetext" onclick="orangetextcol()"></button>
-        <button id="hotpinktext" onclick="hotpinktextcol()"></button>
-        <button id="lightbluetext" onclick="lightbluetextcol()"></button>
-        <button id="greytext" onclick="greytextcol()"></button>
-        <button id="lightgreentext" onclick="lightgreentextcol()"></button>
-        <button id="purpletext" onclick="purpletextcol()"></button>
-        <button id="browntext" onclick="browntextcol()"></button>
-        <button id="whitetext" onclick="whitetextcol()"></button>
-        <button id="tealtext" onclick="tealtextcol()"></button>
-        <button id="maroontext" onclick="maroontextcol()"></button>
-        <button id="auqatext" onclick="auqatextcol()"></button>
-        <button id="minttext" onclick="minttextcol()"></button>
-        <button id="peachtext" onclick="peachtextcol()"></button>
-        <button id="olivetext" onclick="olivetextcol()"></button>
-        <button id="lightredtext" onclick="lightredtextcol()"></button>
-        <button id="darkredtext" onclick="darkredtextcol()"></button>
-        <button id="perutext" onclick="perutextcol()"></button>
-        </div>
-        </div>
 
-        <div id="bgcol">
-            <h2>Background</h2>
-            <div id="bg">
-            <button id="greenbg" onclick="greenbgcolo()"></button>
-            <button id="redbg" onclick="redbgcolo()"></button>
-            <button id="pinkbg" onclick="pinkbgcolo()"></button>
-            <button id="yellowbg" onclick="yellowbgcolo()"></button>
-            <button id="bluebg" onclick="bluebgcolo()"></button>
-            <button id="violetbg" onclick="violetbgcolo()"></button>
-            <button id="orangebg" onclick="orangebgcolo()"></button>
-            <button id="hotpinkbg" onclick="hotpinkbgcolo()"></button>
-            <button id="lightbluebg" onclick="lightbluebgcolo()"></button>
-            <button id="greybg" onclick="greybgcolo()"></button>
-            <button id="lightgreenbg" onclick="lightgreenbgcolo()"></button>
-            <button id="purplebg" onclick="purplebgcolo()"></button>
-            <button id="brownbg" onclick="brownbgcolo()"></button>
-            <button id="tealbg" onclick="tealbgcolo()"></button>
-            <button id="maroonbg" onclick="maroonbgcolo()"></button>
-            <button id="auqabg" onclick="auqabgcolo()"></button>
-            <button id="mintbg" onclick="mintbgcolo()"></button>
-            <button id="peachbg" onclick="peachbgcolo()"></button>
-            <button id="olivebg" onclick="olivebgcolo()"></button>
-            <button id="orangeredbg" onclick="orangeredbgcolo()"></button>
-            <button id="darkredbg" onclick="darkredbgcolo()"></button>
-            <button id="perubg" onclick="perubgcolo()"></button>
-            <button id="whitebg" onclick="whitebgcolo()"></button>
+<body>
+    <center>
+        <h1 id="he">Color & Font Picker</h1>
+    </center>
+    <div id="main">
+        <div >
+            <h1 id="text" contenteditable="true"></h1>
+        </div>
+        <div id="con">
+            <div id="sub1">
+                <div>
+                    <h2>Text Color</h2>
+                    <div id="col">
+                        <button id="redtext" onclick="redtextcol()"></button>
+                        <button id="greentext" onclick="greentextcol()"></button>
+                        <button id="pinktext" onclick="pinktextcol()"></button>
+                        <button id="yellowtext" onclick="yellowtextcol()"></button>
+                        <button id="bluetext" onclick="bluetextcol()"></button>
+                        <button id="violettext" onclick="violettextcol()"></button>
+                        <button id="orangetext" onclick="orangetextcol()"></button>
+                        <button id="hotpinktext" onclick="hotpinktextcol()"></button>
+                        <button id="lightbluetext" onclick="lightbluetextcol()"></button>
+                        <button id="greytext" onclick="greytextcol()"></button>
+                        <button id="lightgreentext" onclick="lightgreentextcol()"></button>
+                        <button id="purpletext" onclick="purpletextcol()"></button>
+                        <button id="browntext" onclick="browntextcol()"></button>
+                        <button id="whitetext" onclick="whitetextcol()"></button>
+                        <button id="tealtext" onclick="tealtextcol()"></button>
+                        <button id="maroontext" onclick="maroontextcol()"></button>
+                        <button id="auqatext" onclick="auqatextcol()"></button>
+                        <button id="minttext" onclick="minttextcol()"></button>
+                        <button id="peachtext" onclick="peachtextcol()"></button>
+                        <button id="olivetext" onclick="olivetextcol()"></button>
+                        <button id="lightredtext" onclick="lightredtextcol()"></button>
+                        <button id="darkredtext" onclick="darkredtextcol()"></button>
+                        <button id="perutext" onclick="perutextcol()"></button>
+                    </div>
+                </div>
+
+                <div id="bgcol">
+                    <h2>Background</h2>
+                    <div id="bg">
+                        <button id="greenbg" onclick="greenbgcolo()"></button>
+                        <button id="redbg" onclick="redbgcolo()"></button>
+                        <button id="pinkbg" onclick="pinkbgcolo()"></button>
+                        <button id="yellowbg" onclick="yellowbgcolo()"></button>
+                        <button id="bluebg" onclick="bluebgcolo()"></button>
+                        <button id="violetbg" onclick="violetbgcolo()"></button>
+                        <button id="orangebg" onclick="orangebgcolo()"></button>
+                        <button id="hotpinkbg" onclick="hotpinkbgcolo()"></button>
+                        <button id="lightbluebg" onclick="lightbluebgcolo()"></button>
+                        <button id="greybg" onclick="greybgcolo()"></button>
+                        <button id="lightgreenbg" onclick="lightgreenbgcolo()"></button>
+                        <button id="purplebg" onclick="purplebgcolo()"></button>
+                        <button id="brownbg" onclick="brownbgcolo()"></button>
+                        <button id="tealbg" onclick="tealbgcolo()"></button>
+                        <button id="maroonbg" onclick="maroonbgcolo()"></button>
+                        <button id="auqabg" onclick="auqabgcolo()"></button>
+                        <button id="mintbg" onclick="mintbgcolo()"></button>
+                        <button id="peachbg" onclick="peachbgcolo()"></button>
+                        <button id="olivebg" onclick="olivebgcolo()"></button>
+                        <button id="orangeredbg" onclick="orangeredbgcolo()"></button>
+                        <button id="darkredbg" onclick="darkredbgcolo()"></button>
+                        <button id="perubg" onclick="perubgcolo()"></button>
+                        <button id="whitebg" onclick="whitebgcolo()"></button>
+                    </div>
+                </div>
+            </div>
+            <div id="sub2">
+                <h2 style="width: 400px;">Text Font</h2>
+                <div class="ft">
+                    <button onclick="a()" style="font-style:italic">Hello</button>
+                    <button onclick="b()" style="font-family: Georgia;">Hello</button>
+                    <button onclick="c()" style="font-family:'Verdana';">Hello</button>
+                    <button onclick="d()" style="font-family: 'Tahoma';">Hello</button>
+                    <button onclick="e()" style="font-family: 'Courier New';">Hello</button>
+                    <button onclick="f()" style="font-family: 'Georgia';">Hello</button>
+                    <button onclick="g()" style="font-family: 'Comic Sans MS','cursive';">Hello</button>
+                    <button onclick="h()" style="font-family: 'Impact';">Hello</button>
+                    <button onclick="i()" style="font-family: 'Palatino Linotype','Book Antiqua';">Hello</button>
+                    <button onclick="j()" style="font-family: 'Lucida Console','monospace';">Hello</button>
+                    <button onclick="k()" style="font-family: 'Helvetica';">Hello</button>
+                    <button onclick="l()" style="font-family: 'Trebuchet';">Hello</button>
+                    <button onclick="m()" style="font-family: 'Brush Script Mt',cursive;">Hello</button>
+                    <button onclick="n()" style="font-family: 'Lucida Sans';">Hello</button>
+                    <button onclick="o()" style="font-family: 'Gill Sans';">Hello</button>
+                    <button onclick="p()" style="font-family: 'Franklin Gothic Medium';">Hello</button>
+                    <button onclick="q()" style="font-family: 'Garamond';">Hello</button>
+                    <button onclick="r()" style="font-family: 'Segoe UI';">Hello</button>
+                    <button onclick="s()" style="font-family: 'Rockwell';">Hello</button>
+                    <button onclick="t()" style="font-family: 'Century Gothic';">Hello</button>
+                </div>
+                <div id="pic1">
+                    <button id="pic">Download</button>
+                </div>
             </div>
         </div>
     </div>
-    <div id="sub2">
-        <h2 style="width: 400px;">Text Font</h2>
-        <div class="ft">
-            <button  onclick="a()" style="font-style:italic">Hello</button>
-            <button  onclick="b()" style="font-family: Georgia;">Hello</button>
-            <button  onclick="c()" style="font-family:'Verdana';">Hello</button>
-            <button  onclick="d()" style="font-family: 'Tahoma';">Hello</button>
-            <button  onclick="e()" style="font-family: 'Courier New';">Hello</button>
-            <button  onclick="f()" style="font-family: 'Georgia';">Hello</button>
-            <button  onclick="g()" style="font-family: 'Comic Sans MS','cursive';">Hello</button>
-            <button  onclick="h()" style="font-family: 'Impact';">Hello</button>
-            <button  onclick="i()" style="font-family: 'Palatino Linotype','Book Antiqua';">Hello</button>
-            <button  onclick="j()" style="font-family: 'Lucida Console','monospace';">Hello</button>
-            <button  onclick="k()" style="font-family: 'Helvetica';">Hello</button>
-            <button  onclick="l()" style="font-family: 'Trebuchet';">Hello</button>
-            <button  onclick="m()" style="font-family: 'Brush Script Mt',cursive;">Hello</button>
-            <button  onclick="n()" style="font-family: 'Lucida Sans';">Hello</button>
-            <button  onclick="o()" style="font-family: 'Gill Sans';">Hello</button>
-            <button  onclick="p()" style="font-family: 'Franklin Gothic Medium';">Hello</button>
-            <button  onclick="q()" style="font-family: 'Garamond';">Hello</button>
-            <button  onclick="r()" style="font-family: 'Segoe UI';">Hello</button>
-            <button  onclick="s()" style="font-family: 'Rockwell';">Hello</button>
-            <button  onclick="t()" style="font-family: 'Century Gothic';">Hello</button>
-        </div>
-    </div>
-    </div>
-    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
