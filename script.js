@@ -265,6 +265,13 @@ function t() {
 const de=document.getElementById("pic")
 de.addEventListener('click',download_image);
 function download_image() {
+    let z=document.getElementById("text")
+    if(z.innerHTML==="")
+    {
+        alert('please write something')
+        return;
+    }
+
     html2canvas(document.getElementById("text")).then(canvas => {
         const link = document.createElement('a');
         link.href = canvas.toDataURL('image/png');  
