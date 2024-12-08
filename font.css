@@ -333,6 +333,7 @@ h2 {
         display: flex;
         flex-direction: column;
         margin-left: 0; 
+        felx-wrap: wrap;
     }
     #text {
         width: 80%;
